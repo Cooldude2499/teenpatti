@@ -6,6 +6,7 @@ app.get('/download', (req, res) => {
     res.download('teenpatti.apk')
 })
 
-app.listen(8000, () => {
+
+app.listen(3000, () => {
     console.log("SERVER STARTED!!");
 })
