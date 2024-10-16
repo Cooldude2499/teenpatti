@@ -12,7 +12,7 @@ app.get('/download', (req, res) => {
 })
 
 app.get('*', (req, res) => {
-    res.send("<h1>404 - Not Found</h1>")
+    res.send("<h2>404 - Not Found</h2>")
 })
 
 app.listen(3000, () => {
