@@ -11,6 +11,9 @@ app.get('/download', (req, res) => {
     res.download('teenpatti.apk')
 })
 
+app.get('*', (req, res) => {
+    res.send("<h1>404 - Not Found</h1>")
+})
 
 app.listen(3000, () => {
     console.log("SERVER STARTED!!");
